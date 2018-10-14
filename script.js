@@ -1,3 +1,11 @@
+const numbers = document.querySelectorAll("[id^='num']");
+
+numbers.forEach((numbers) => {
+ 	numbers.addEventListener('click', (e) => {
+  		console.log(numbers.id);
+  	 }); 
+});
+
 function addition(numA, numB) {
 	return numA + numB;
 }

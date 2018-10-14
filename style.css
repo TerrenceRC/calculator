@@ -1,0 +1,118 @@
+
+.center {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.container {
+	width: 100%;
+}
+
+.calculator {
+	 width: 100%;
+	 justify-content: center;
+     display: grid;
+     position: relative;
+ 	 grid-template-columns: 75px 75px 75px 75px;
+ 	 grid-template-rows: 75px 75px 75px 75px;
+ 	 grid-template-areas: 
+  	    "calc-display calc-display calc-display calc-display"
+   	    "num7 num8 num9 divide"
+ 		"num4 num5 num6 multiply"
+ 		"num1 num2 num3 subtraction"
+ 		"num0 clear equals addition";
+}
+ 
+.calc-display {
+	width: 255px;
+	height: 50px;
+	font-size: 40px;
+	border-style: solid;
+	border-width: .5px;
+	border-color: black;
+	text-align: right;
+	margin: auto;
+	grid-area: calc-display;
+	padding: 0px 10px 0px 10px;
+	color: grey;
+}
+
+.calc-button {
+	border-radius: 50px;
+	background-color: grey;
+	width: 65px;
+	height: 65px;
+	text-align: center;
+	margin: 0 auto;
+	color: white;
+	font-size: 50px;
+	top: 50px;
+}
+
+.numbers {
+	background-color: grey;
+
+}
+
+.num0 {
+	grid-area: num0;
+}
+.num1 {
+	grid-area: num1;
+}
+.num2 {
+	grid-area: num2;
+}
+.num3 {
+	grid-area: num3;
+}
+.num4 {
+	grid-area: num4;
+}
+.num5 {
+	grid-area: num5;
+}
+.num6 {
+	grid-area: num6;
+}
+.num7 {
+	grid-area: num7;
+}
+.num8 {
+	grid-area: num8;
+}
+.num9 {
+	grid-area: num9;
+}
+
+#divide {
+	grid-area: divide;
+	background-color: #77C;
+}
+
+#multiply {
+	grid-area: multiply;
+	background-color: #77C;
+}
+
+#subtraction {
+	grid-area: subtraction;
+	background-color: #77C;
+}
+
+#addition {
+	grid-area: addition;
+	background-color: #77C;
+}
+
+#equals {
+	grid-area: equals;
+	background-color: #77C;
+}
+
+#clear {
+	grid-area: clear;
+	background-color: #DDD;
+	color: #444;
+
+}
